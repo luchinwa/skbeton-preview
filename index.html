@@ -14,7 +14,7 @@
 :root{
   --bg:#eceeed; --surface:#ffffff; --surface-2:#f5f6f5; --line:#d3d8db;
   --ink:#122230; --ink-2:#4b5b68; --blue:#0058a0; --blue-ink:#ffffff; --blue-soft:#dbe8f4;
-  --sand:#d8c39a; --signal:#f2b705; --signal-ink:#1d1a10; --ok:#2f7d4f;
+  --brand:#0058a0; --sand:#d8c39a; --signal:#f2b705; --signal-ink:#1d1a10; --ok:#2f7d4f;
   --f-disp:"Fira Sans Extra Condensed","Arial Narrow",Arial,sans-serif;
   --f-body:"Golos Text",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --f-mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
@@ -57,7 +57,7 @@ a{color:inherit}
 .demo b{font-family:var(--f-mono);letter-spacing:.08em;text-transform:uppercase;font-size:11px;color:var(--signal)}
 
 /* header */
-header.top{background:var(--blue);color:var(--blue-ink);position:sticky;top:env(safe-area-inset-top,0px);z-index:20;box-shadow:0 1px 0 rgba(0,0,0,.15)}
+header.top{background:var(--brand);color:var(--blue-ink);position:sticky;top:env(safe-area-inset-top,0px);z-index:20;box-shadow:0 1px 0 rgba(0,0,0,.15)}
 header.top .wrap{display:flex;align-items:center;gap:24px;min-height:72px;padding-block:8px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
 .logo svg{width:38px;height:38px}
@@ -74,7 +74,7 @@ header .btn{min-height:44px;padding:0 16px;font-size:16px}
 @media (max-width:620px){.hphone small,header .btn{display:none}.logo small{display:none}.hphone a{font-size:16px}}
 
 /* hero */
-.hero{background:var(--blue);color:var(--blue-ink);padding-block:28px 0;overflow:hidden}
+.hero{background:var(--brand);color:var(--blue-ink);padding-block:28px 0;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:40px;align-items:end}
 .hero-copy{display:grid;gap:22px;padding-bottom:44px}
 .hero h1{font-size:clamp(42px,6.4vw,82px);text-transform:uppercase}
@@ -175,7 +175,7 @@ textarea{min-height:84px;resize:vertical}
 @media (max-width:520px){.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}}
 
 /* order */
-.order{background:var(--blue);color:var(--blue-ink)}
+.order{background:var(--brand);color:var(--blue-ink)}
 .order-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:44px;align-items:start}
 @media (max-width:900px){.order-grid{grid-template-columns:1fr;gap:28px}}
 .order .eyebrow{color:var(--signal)}
